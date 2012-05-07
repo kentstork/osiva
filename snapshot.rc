@@ -1,0 +1,290 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND                CURSOR  DISCARDABLE     "Pan.cur"
+IDC_GRASP               CURSOR  DISCARDABLE     "PanMove.cur"
+IDC_INDEX               CURSOR  DISCARDABLE     "index.cur"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// GIF
+//
+
+IDR_GIF1                GIF     DISCARDABLE     "osiva.gif"
+IDR_GIF2                GIF     DISCARDABLE     "error.gif"
+IDR_BAR                 GIF     DISCARDABLE     "iconbar528.gif"
+IDR_BAR_MD              GIF     DISCARDABLE     "iconbar528md.gif"
+IDR_BAR_MO              GIF     DISCARDABLE     "iconbar528mo.gif"
+IDR_BAR_NA              GIF     DISCARDABLE     "iconbar528na.gif"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_HELP DIALOGEX 25, 25, 192, 185
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Osiva Image Viewer"
+FONT 10, "Verdana", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_HELPEDIT,4,4,184,177,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+END
+
+IDD_FILETYPES DIALOG DISCARDABLE  0, 0, 261, 167
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Osiva File Types"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,150,146,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,204,146,50,14
+    CONTROL         ".gif",IDC_GIFTYPE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    61,69,25,10
+    CONTROL         ".jpg",IDC_JPGTYPE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    61,88,27,10
+    CONTROL         ".jpeg",IDC_JPEGTYPE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,61,106,31,10
+END
+
+IDD_FLIP DIALOGEX 0, 0, 127, 85
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "Osiva Slide Show Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_SEC,65,7,52,12,ES_CENTER | ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    PUSHBUTTON      "Apply",IDC_B_APPLY,66,64,52,14
+    CONTROL         "Slide Show",IDC_FLIP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,7,49,13
+    CONTROL         "Dissolve",IDC_DISSOLVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,34,52,14
+    COMBOBOX        IDC_DISSOLVE_BITS,65,27,52,74,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "",IDC_HOTSPOT1,23,72,13,6,BS_FLAT | NOT WS_VISIBLE | 
+                    NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_HOTSPOT2,7,72,13,6,BS_FLAT | NOT WS_VISIBLE | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_DISLV,65,43,52,12,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,6,19,115,41
+END
+
+IDD_TRANSPARENCY DIALOG DISCARDABLE  0, 0, 172, 106
+STYLE DS_MODALFRAME | WS_CAPTION
+CAPTION "Osiva Transparency Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,85,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,61,85,50,14
+    EDITTEXT        IDC_EDIT_BGDIFF,111,18,45,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_EROSIONS,111,37,45,13,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_DEPTH,111,63,45,13,ES_CENTER | ES_AUTOHSCROLL
+    PUSHBUTTON      "Apply",IDC_APPLY,115,85,50,14
+    CTEXT           "Background Tolerance",IDC_STATIC,18,18,84,13,
+                    SS_CENTERIMAGE
+    CTEXT           "Thin Mask",IDC_STATIC,25,37,69,13,SS_CENTERIMAGE
+    CTEXT           "Nesting",IDC_STATIC,34,63,51,13,SS_CENTERIMAGE
+    GROUPBOX        " JPG Images ",IDC_STATIC,7,7,158,51
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_HELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 188
+        BOTTOMMARGIN, 181
+        HORZGUIDE, 4
+    END
+
+    IDD_FILETYPES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_FLIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 121
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_TRANSPARENCY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        VERTGUIDE, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TXT
+//
+
+IDR_TXT1                TXT     DISCARDABLE     "instructions.txt"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_APP                 ICON    DISCARDABLE     "app.ico"
+IDI_GIF                 ICON    DISCARDABLE     "gif.ico"
+IDI_JPG                 ICON    DISCARDABLE     "jpg.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "menu"
+    BEGIN
+        MENUITEM "Save Layout...",              ID_SAVELAYOUT
+        MENUITEM "Consolidate...",              ID_BATCH_CONSOLIDATE
+        MENUITEM "Help...",                     ID_HELPWIN
+        MENUITEM SEPARATOR
+        MENUITEM "Slide Show",                  ID_FLIP
+        MENUITEM "Slide Show...",               ID_FLIPTIME
+        MENUITEM SEPARATOR
+        MENUITEM "Transparency...",             ID_TRANSPARENCY
+        MENUITEM SEPARATOR
+        MENUITEM "Suppress Zoom",               ID_SUPPRESSZOOM
+        MENUITEM "Stay Open",                   ID_STAYOPEN
+        MENUITEM "Stay On Top",                 ID_STAYONTOP
+        MENUITEM "Right Click Closes",          ID_RIGHTCLICKCLOSES
+        MENUITEM SEPARATOR
+        MENUITEM "Match Area",                  ID_FIT_MATCHAREA
+        MENUITEM "Fit Inside",                  ID_FIT_INSIDE
+        MENUITEM "Tile Inside",                 ID_TILE
+        MENUITEM "Fit Exactly",                 ID_FIT_EXACTLY
+        MENUITEM SEPARATOR
+        POPUP "Rotate All"
+        BEGIN
+            MENUITEM "90° CCW",                     ID_ROTATE_CCW
+            MENUITEM "90° CW",                      ID_ROTATE_CW
+        END
+    END
+    POPUP "context"
+    BEGIN
+        MENUITEM "Fit Screen",                  ID_FITSCREEN
+        MENUITEM SEPARATOR
+        MENUITEM "Replace Tile",                ID_REPLACETILE
+        MENUITEM SEPARATOR
+        MENUITEM "Zoom 1/2",                    ID_CONTEXT_ZOOM12
+        MENUITEM "Zoom 1/3",                    ID_CONTEXT_ZOOM13
+        MENUITEM "Zoom 1/4",                    ID_CONTEXT_ZOOM14
+        MENUITEM "Zoom 1/8",                    ID_CONTEXT_ZOOM18
+        MENUITEM SEPARATOR
+        MENUITEM "Close",                       ID_CLOSE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_FLIP DLGINIT
+BEGIN
+    IDC_DISSOLVE_BITS, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_DISSOLVE_BITS, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_DISSOLVE_BITS, 0x403, 3, 0
+0x3436, "\000" 
+    IDC_DISSOLVE_BITS, 0x403, 4, 0
+0x3231, 0x0038, 
+    IDC_DISSOLVE_BITS, 0x403, 4, 0
+0x3532, 0x0036, 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,237 @@
+Osiva is an image display and compositing tool. Use it to compare and organize digital photos, create a slide show, animate a JPEG list, or composite collage and dissolve effects without windows and controls getting in the way. Images are treated as independent, tangible objects. Osiva can also display image transparency directly on the desktop.
+
+
+How do you use it?
+
+Drag and drop images into Osiva. You can drop images onto any image window or the icon bar.You can also make Osiva the default viewer for JPG  and GIF images. 
+
+An image is initially shown at it's actual pixel size. Click on the image and it turns into a thumbnail. Click again and it toggles back to actual size. Move the image by grabbing it with the left mouse button. Resize the image by grabbing the lower left corner. Rotate the image by grabbing the top and pulling. Drag & Drop the image out of Osiva by grabbing it with the right mouse button.
+
+The initial Osiva logo or "splash" image is an image like any other. Close it or drop an image on top of it to replace it.
+
+
+How do you save your work?
+
+There are three ways to save your work. You can save a file containing the current layout of images. When you reopen the layout file the images are opened and returned to their saved positions. You can "consolidate" the current set of images into a new folder. Consolidation will copy the images and create a matching layout file. Or you can just press the Windows "Print Screen" key and copy the entire screen image into the clip board. This is useful for making quick composites and panoramas that fit on the screen.  
+
+
+  *****
+  *****
+  *****
+
+Osiva Reference
+
+
+LEFT CLICK	- zoom the image
+
+LEFT CLICK drag	- move the image
+
+[Alt] LEFT CLICK or
+RIGHT CLICK drag	- drag the image out
+		  of osiva
+
+[Ctrl] LEFT CLICK	- make the image edges
+		  transparent
+
+[Shift] LEFT CLICK	- sink the image to
+		  the bottom (of the
+		  Z order)
+
+
+LEFT CLICK	- (bottom right corner)
+		  resize the image
+
+[Shift] LEFT CLICK	- (bottom right corner)
+		   freely resize the image
+
+LEFT CLICK	-(top middle of image)
+		 rotate the image
+
+Drop an image on a full size osiva window and the image will be replaced. 
+
+Drop an image on a reduced osiva window and a new window will open.
+
+
+  *****
+  *****
+  *****
+
+Keys
+
+
+[Space Bar] 	- Apply force based layout;
+		  make the images repel
+		  each other
+
+[Backspace]	- Make the images attract
+		  each other
+
+
+[Page Up] 	- Spread the images at the
+		  top-right of the screen
+
+[Page Down]	- Spread the images across
+		  the screen
+
+[Home]		- Stack the images in the
+		  center of the screen
+
+[End]		- Snug the images at the
+		  top-right of the screen
+
+
+[s]		- Sink the image
+		  (like [Shift] LEFT CLICK)
+
+[t]		- Make the image trans-
+		  parent (like [Ctrl] LEFT
+		  CLICK)
+
+[1]		- Show all images full size
+
+[2] thru [9]	- Change the default zoom
+		  factor for the thumbnail
+		  zoom view; show all 
+		  images at the new size
+
+To get the idea, select a bunch of images and drop them onto the osiva window. Then hit the [Page Up] key, the [5] key, and hold the spacebar down. For fun, try moving an image around while you hold the spacebar down.
+
+
+  *****
+  *****
+  *****
+
+More Keys
+
+
+[Enter] or
+[Tab]		- Cycle through the images
+		  [Shift][Tab] goes the
+		  other way
+
+[Esc]		- Close the top image
+		  ( you can hold it down)
+
+[f]		- Toggle slide show on and off
+
+[z]		- Zoom the image
+		  same as LEFT CLICK
+
+[x]		- Size all the images 
+		  exactly like the top one
+
+Arrows		- Nudge the image 1 pixel
+		  [Shift] & [Ctrl] for faster
+
+[Ctrl]P		- List the file paths
+
+
+  *****
+  *****
+  *****
+
+Menu:
+
+[Save Layout...]
+
+"Save Layout" invokes a "Save As" dialog to get a destination file path. Choose where you want the layout file written. Osiva will then write a text file listing each image currently being displayed, along with all the display information. When you drop the text file back into osiva, that set of images will be reloaded. 
+
+[Slide Show]
+
+Toggles the slide show on or off. This emulates pressing the [Tab] key. The [Tab] key and [Shift] key are still active so you can go faster or backwards.
+
+[Slide Show...]
+
+Opens a dialog to set the display time for each image. You can also set up an image to image dissolve. Dissolve works best with Windows 2000, and with a fast computer. The two bars at the bottom left of the dialog are mouse over triggers. The one on the left flips backwards, and the one on the right forwards.
+
+[Transparency...]
+
+Imagine an O (oh) with a dot inside it. The background is white, the O and the dot are black. Nesting 0 (zero) makes the outside of the O transparent. Nesting 1 gives you a fully transparent O with no dot. Only one transition inside the main mask is allowed.  Nesting 2 gives you back the dot. Whatever that means, that's what "nesting" means.
+
+Set nesting to 0 for all those Jpeg images that have the background color enclosed in the region you want to keep visible.
+
+Sometimes calculating the transparency this way (edge scanning) seems too hard. In those cases osiva gives up and shows you how far it got. You will see a strange pink and green image (the mask) with cyan lines showing the edge tracing. Brush over the image with another image to restore it.
+
+[Suppress Zoom]
+
+Single click zooming will get in the way if you use osiva to do accurate compositing. A small image movement will be interpreted as a zoom click. Turn single click zooming off by selecting this item.
+
+[Stay Open]
+
+Osiva's default behavior is to exit if no images are being shown. Select this item to have osiva stay open as a more subdued icon bar, with no tooltips.
+
+[Tile]
+
+"Tile" will shrink all the images to squares and tile them within the boundaries of the topmost image (the one most recently selected.) To put the tiles where you want them, move the topmost image and resize it while holding the shift key down. Then select the "Tile" menu item.
+
+[Fit Inside]
+
+Select "Fit Inside" to scale and move all the images to fit over the topmost image (the one most recently selected). "Fit - Inside" locks the aspect ratio of the images.
+
+[Fit Exactly]
+
+Select "Fit Exactly" to scale and move all the images to fit exactly over the topmost image (the one most recently selected). "Fit - Exactly" changes the aspect ratio of the images to match that of the topmost image. You can choose this with the [x] key.
+
+[Match Area]
+
+Select "Match Area" to scale all the images to the same area as the topmost image. The images are not moved. The images maintain their native aspect ratio. This is the most natural way to make images the "same size".
+
+
+  *****
+  *****
+  *****
+
+Tips
+
+Basic use is to just drop a bunch of images onto an osiva window, then click on them. Click once to reduce the image to stamp size; click again to view it full size. Move the small images to the side of the screen to get them out of the way.
+
+[Alt] LEFT CLICK or RIGHT CLICK to drag an image out of osiva. You can copy and move images if you drag them from osiva into a Windows File Manager window. The osiva window should close if you move the image, otherwise it will stay open. RIGHT CLICK to drag an image into your image editor.
+
+[Page Up], [Page Down], and [Home] randomize the Z order of the images. You can use osiva to play cards. Hit [Page Up] a few times to shuffle, then pull the cards together with the [Backspace] key. These three keys make the images visible if they are buried under a lot of windows.
+
+Holding an image with the mouse excludes it from a group operation triggered by the keyboard. You can click on an image and hit the [Page Up] key; all the other images will stack at the top right. This also works for [1]-[9], [Page Down], and [End.] You have to click again for each operation, though.
+
+You can get another instance of osiva if you start it from the command line with a +, like: "osiva +", or "osiva + myimage.jpg". Each icon-bar will control its own images.
+
+This program is sensitive to the keyboard repeat rate and the mouse double-click speed. Increasing the keyboard repeat rate makes the space bar work faster. Decreasing the mouse double-click time allows you to zoom in and out rapidly.
+
+
+  *****
+  *****
+  *****
+
+Make Osiva the Default Viewer
+
+Right click on a JPEG or GIF and select "Open With", "Choose Program", "Other" and find osiva.exe using the dialog box. Make sure to click the "Always use..." check box. Do this for the ".osiva" layout file also.
+
+
+  *****
+  *****
+  *****
+
+Current Support
+
+  - GIF and JPEG images
+  - [Ctrl] LEFT CLICK transparency
+    uses the top-left pixel as the
+    transparent color. The tolerance 
+    is applied to JPEG images only.
+  - Osiva is designed for true color
+    displays.  
+    
+
+Osiva is free as in "free beer".
+
+Osiva is a fairly complicated program that has not been rigorously tested -- it has undiscovered errors. It is possible that an Osiva error may contribute to system malfunction or data loss. By using Osiva you agree to assume that risk; the poor coder cannot be held liable.
+ 
+Copyright Kent Stork, 2002-2012
+http://www.tristable.net/osiva/
+kwstork@yahoo.com
+
+If you use Osiva please send me an email.
+
+Osiva, the "overly simple image viewing application"
+Version 1.3.0
+
+
+

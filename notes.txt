@@ -1,0 +1,15 @@
+Todo 040430
+
+Logrithmic arrow keys for moving the image.
+
+Transparency is not consistent with different size images. Mask thinning should be insensitive to scale factor -- absolute image size should be what matters.
+
+When an image region is expanded in transparency it needs to refresh the image data, in case there was mask information showing.
+
+** Context menu zoom needs to center the image properly.
+
+The key for closing an image should be [del], not escape. Escape should be used to stop lengthy operations, especially group resizes and drops.
+
+Tile twice should not do twice the work.
+
+The fit screen iconbar icon should fit all images to the screen. It's OK for the iconbar to change to a progress indication.
